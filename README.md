@@ -50,7 +50,7 @@ app
   components
     Home
         Home.css
-        Home.jsx
+        Home.js
     Blog-intro-container
         Blog-image
             Blog-link
