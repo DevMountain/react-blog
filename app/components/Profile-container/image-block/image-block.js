@@ -1,7 +1,6 @@
 import React from 'react';
 require('./Image-block.css');
 
-
 const PhotoGrid = ({cardData}) => {
     return (
         <div className="list-container">
@@ -24,12 +23,8 @@ const PhotoGrid = ({cardData}) => {
     );
 };
 
-
 PhotoGrid.propTypes = {
     cardData: React.PropTypes.array.isRequired
 };
 
-
-
-export default PhotoGrid
-
+export default PhotoGrid;

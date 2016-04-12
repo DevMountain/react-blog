@@ -6,4 +6,4 @@ import routes from './config/routes';
 ReactDOM.render(
     <Router history={ browserHistory }>{routes}</Router>,
     document.getElementById('app')
-)
+);
