@@ -528,13 +528,10 @@ We can do this by using the javascript map method.
   import React from 'react';
   import BlogLink from './Blog-link/Blog-link';
 
-  const function name = (blogInfo object) => {
+  const functionName = (blogInfo) => {
       return (
-
-
       <div>
           <img/>
-
             BlogLink component
       </div>
       );
