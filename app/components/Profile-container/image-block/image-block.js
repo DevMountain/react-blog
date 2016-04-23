@@ -21,7 +21,7 @@ const PhotoGrid = ({cardData}) => {
 };
 
 PhotoGrid.propTypes = {
-  cardData: React.PropTypes.object.isRequired
+  cardData: React.PropTypes.array.isRequired
 };
 
 export default PhotoGrid
