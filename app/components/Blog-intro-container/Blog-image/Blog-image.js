@@ -8,7 +8,7 @@ const BlogImage = ({blogInfo}) => {
       <img className="blog-intro-img" src={blogInfo.image} alt="" />
       <BlogLink blogInfo={blogInfo} />
     </div>
-  )
+  );
 };
 
 BlogImage.propTypes = {
