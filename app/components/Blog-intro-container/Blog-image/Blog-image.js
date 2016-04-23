@@ -9,10 +9,10 @@ const BlogImage = ({blogInfo}) => {
       <BlogLink blogInfo={blogInfo} />
     </div>
   )
-}
+};
 
 BlogImage.propTypes = {
   blogInfo: React.PropTypes.object.isRequired
-}
+};
 
 export default BlogImage
