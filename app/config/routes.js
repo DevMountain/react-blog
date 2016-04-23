@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from '../components/Home/Home';
-import  ProfileContainer from '../components/Profile-container/Profile-container';
+import ProfileContainer from '../components/Profile-container/Profile-container';
 
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 

@@ -22,7 +22,7 @@ export function getUserInfo (id) {
 
 };
 
-export function  usersBlogData () {
+export function usersBlogData () {
     return axios.get(`http://localhost:8080/api/usersBlogData`)
         .then(function (data) {
             return data;
@@ -32,5 +32,3 @@ export function  usersBlogData () {
         });
 
 };
-
-
