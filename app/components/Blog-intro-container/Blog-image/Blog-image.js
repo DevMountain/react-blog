@@ -4,8 +4,8 @@ import BlogLink from './Blog-link/Blog-link';
 
 const BlogImage = ({blogInfo}) => {
   return (
-    <div>
-      <img className="blog-intro-img" src={blogInfo.image} alt="" />
+    <div className='image-container'>
+      <img src={blogInfo.image} alt="" className='blog-intro-img' />
       <BlogLink blogInfo={blogInfo} />
     </div>
   );

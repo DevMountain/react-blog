@@ -17,7 +17,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='main-home-container'>
         <BlogIntro />
       </div>
     )

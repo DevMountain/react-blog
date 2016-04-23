@@ -28,10 +28,10 @@ class BlogIntroContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='Blog-intro-main-container'>
         {this.state.usersBlogData.map((data) => {
           return (
-            <div key={data.id}>
+            <div key={data.id} className='Blog-intro'>
               <BlogMeta metaInfo={data} />
               <BlogImage blogInfo={data} />
             </div>

@@ -30,7 +30,7 @@ class ProfileContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='main-profile-container'>
         <Profile user={this.state.userInfo} />
         <PhotoGrid cardData={this.state.cardData} />
       </div>
