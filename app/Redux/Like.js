@@ -13,7 +13,7 @@ export function reducer(state = initialState, action = {}) {
       };
     case UNLIKE:
       return {
-        unlike: 'false'
+        like: 'false'
       };
     default:
       return state;

@@ -7,9 +7,11 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { reducer } from './Redux/Like';
 
-let store = createStore(reducer); 
+let store = createStore(reducer);
 
 ReactDOM.render(
-    <Router history={ hashHistory }>{routes}</Router>,
-    document.getElementById('app')
+  <Provider store={store}>
+    <Router history={ hashHistory }>{routes}</Router>
+  </Provider>,
+  document.getElementById('app')
 )
