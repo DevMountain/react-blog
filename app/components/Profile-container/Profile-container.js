@@ -31,7 +31,7 @@ class ProfileContainer extends React.Component {
   render() {
     return (
       <div className='main-profile-container'>
-        <Profile user={this.state.userInfo} />
+        <Profile user={this.state.userInfo} like={this.props.like} likeBlog={this.props.likeBlog} unlikeBlog={this.props.unlikeBlog}/>
         <PhotoGrid cardData={this.state.cardData} />
       </div>
     );
@@ -39,3 +39,13 @@ class ProfileContainer extends React.Component {
 }
 
 export default ProfileContainer
+
+function stateToProps(state) {
+  return {
+    like: state.like
+  }
+}
+
+var connectedProfileContainer = connect(stateToProps, {likeBlog: likeBlog, unLikeBlog: unLikeBlog,})(ProfileContainer);
+
+export default connectedProfileContainer

@@ -1,7 +1,7 @@
 require('./Profile.css');
 import React from 'react';
 
-const Profile =({user}) => {
+const Profile =({user, like, likeBlog, unlikeBlog}) => {
   return (
     <div className='profile-container'>
       <div className='profile-image-container'>
@@ -13,6 +13,9 @@ const Profile =({user}) => {
         <div className='like-count-container'>
           <div className='heart-icon'></div>
           <h1>{user.likeCount}</h1>
+          <h3>Like : {like}</h3>
+          <button onClick={()=>likeBlog())}> LIKE </button>
+          <button onClick={()=>unlikeBlog())}> UNLIKE </button>
         </div>
       </div>
     </div>
