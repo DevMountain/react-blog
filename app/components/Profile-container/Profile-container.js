@@ -3,6 +3,8 @@ import React from 'react';
 import Profile from './Profile/Profile';
 import PhotoGrid from './image-block/image-block';
 import {getUserInfo, getPosts} from '../../utils/helpers';
+import {connect} from 'react-redux';
+import {likeBlog, unlikeBlog} from '../../Redux/Like.js';
 
 class ProfileContainer extends React.Component {
   constructor(props) {
@@ -46,6 +48,6 @@ function stateToProps(state) {
   }
 }
 
-var connectedProfileContainer = connect(stateToProps, {likeBlog: likeBlog, unLikeBlog: unLikeBlog,})(ProfileContainer);
+var connectedProfileContainer = connect(stateToProps, {likeBlog: likeBlog, unlikeBlog: unlikeBlog,})(ProfileContainer);
 
 export default connectedProfileContainer

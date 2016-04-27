@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { reducer } from './Redux/Like';
 
-let store = craeteStore(reducer);
+let store = createStore(reducer);
 
 ReactDOM.render(
     <Router history={ hashHistory }>{routes}</Router>,
