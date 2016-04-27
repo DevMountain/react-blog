@@ -47,3 +47,13 @@
     margin-right: 15px;
     cursor: pointer;
 }
+
+.liked-true {
+  background: url(http://www.clker.com/cliparts/7/d/B/j/B/G/pink-heart-hi.png)center no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  background-size: contain;
+  margin-right: 15px;
+  cursor: pointer;
+}

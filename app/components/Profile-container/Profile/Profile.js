@@ -11,7 +11,7 @@ const Profile =({user, like, likeBlog, unlikeBlog}) => {
         <h1>{user.username}</h1>
         <p>{user.intro}</p>
         <div className='like-count-container'>
-          <div className='heart-icon'></div>
+          <div className={`heart-icon liked-${like}`}></div>
           <h1>{user.likeCount}</h1>
           <h3>Like : {like}</h3>
           <button onClick={()=>likeBlog()}> LIKE </button>
