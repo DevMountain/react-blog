@@ -56,7 +56,7 @@ app
   components
     Home
         Home.css
-        Home.jsx
+        Home.js
     Blog-intro-container
         Blog-image
             Blog-link
@@ -186,12 +186,10 @@ ReactDOM.render(
 
 ### Running the project
 ####
-* As you are building the application you will need to be running webpack, http-server and nodemon
+* As you are building the application you will need to be running webpack and node
 * Webpack is used to bundle your javascript
-* nodemon is to run the server
-* http-server is used so we can make api calls to our server and run the app on localhost
-
-* Run webpack -w first, second run nodemon server.js and final run http-server
+* Nodemon is to run the server and serve up your public folder
+* Run `webpack -w` first in one terminal and run `nodemon server.js` in a separate terminal
 
 
 
@@ -530,13 +528,10 @@ We can do this by using the javascript map method.
   import React from 'react';
   import BlogLink from './Blog-link/Blog-link';
 
-  const function name = (blogInfo object) => {
+  const functionName = (blogInfo) => {
       return (
-
-
       <div>
           <img/>
-
             BlogLink component
       </div>
       );
