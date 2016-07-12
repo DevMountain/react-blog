@@ -1,10 +1,11 @@
 {
-  "name": "",
+  "name": "react-blog",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "### What are we building",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,7 +19,9 @@
     "lodash": "^4.9.0",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
-    "react-router": "^2.0.1"
+    "react-redux": "^4.4.5",
+    "react-router": "^2.0.1",
+    "redux": "^3.5.1"
   },
   "devDependencies": {
     "babel-core": "^6.7.6",
@@ -32,5 +35,13 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexdecapri/react-blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexdecapri/react-blog/issues"
+  },
+  "homepage": "https://github.com/alexdecapri/react-blog#readme"
 }
